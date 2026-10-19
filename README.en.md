@@ -37,9 +37,18 @@ python -m etl.cli --help
 pytest
 ```
 
-## See also
+## Sources
 
-- [awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data): list of open data repositories in Portugal (GPL-3.0, link only).
+Repositories linked under `fontes/` (Git submodules). Details in [fontes/README.md](fontes/README.md), [docs/FONTES.md](docs/FONTES.md) and [docs/CATALOGO.md](docs/CATALOGO.md).
+
+| Repository | License | Link type |
+|---|---|---|
+| [rgllm/awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data) | GPL-3.0 | submodule, only name, URL and category are extracted |
+| [openar-pt/api](https://github.com/openar-pt/api) | MIT (stated in the README) | submodule, archived |
+| [openar-pt/mcp](https://github.com/openar-pt/mcp) | MIT (stated in the README) | submodule |
+| [HowTheyVote/data](https://github.com/HowTheyVote/data) | ODbL and DbCL (per the website) | submodule and releases |
+
+To be confirmed: [PORTULAN/parlamento-pt](https://huggingface.co/datasets/PORTULAN/parlamento-pt) (Hugging Face, metadata only says "other"). Also referenced: [teex-pt/leis-pt-consolidada](https://huggingface.co/datasets/teex-pt/leis-pt-consolidada) (CC0-1.0).
 
 ## Licenses
 

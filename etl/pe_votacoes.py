@@ -2,8 +2,9 @@
 
 Fonte: https://github.com/HowTheyVote/data (CSV gzip, atualizado semanalmente,
 só votações nominais, desde a 9.ª legislatura).
-Licença por confirmar (o repositório não tem ficheiro de licença, ver docs/FONTES.md).
-Não republicar os dados antes de a confirmar.
+Licença: ODbL para a base de dados e DbCL para os conteúdos, segundo https://howtheyvote.eu/data
+(o repositório não tem ficheiro de licença). Pede atribuição e, para bases derivadas
+publicadas, partilha nos mesmos termos. Ver DATA_LICENSE.md.
 """
 
 from __future__ import annotations

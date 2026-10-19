@@ -55,9 +55,18 @@ python -m etl.cli pe-votacoes
 pytest
 ```
 
-## Ver também
+## Fontes
 
-- [awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data): lista de repositórios de dados abertos de Portugal (GPL-3.0, só ligação).
+Repositórios ligados em `fontes/` (submódulos Git). Detalhe em [fontes/README.md](fontes/README.md), [docs/FONTES.md](docs/FONTES.md) e [docs/CATALOGO.md](docs/CATALOGO.md).
+
+| Repositório | Licença | Ligação |
+|---|---|---|
+| [rgllm/awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data) | GPL-3.0 | submódulo, só se extraem nome, URL e categoria |
+| [openar-pt/api](https://github.com/openar-pt/api) | MIT (declarada no README) | submódulo, arquivado |
+| [openar-pt/mcp](https://github.com/openar-pt/mcp) | MIT (declarada no README) | submódulo |
+| [HowTheyVote/data](https://github.com/HowTheyVote/data) | ODbL e DbCL (segundo o site) | submódulo e releases |
+
+Por confirmar: [PORTULAN/parlamento-pt](https://huggingface.co/datasets/PORTULAN/parlamento-pt) (Hugging Face, metadados dizem só "other"). Também referido: [teex-pt/leis-pt-consolidada](https://huggingface.co/datasets/teex-pt/leis-pt-consolidada) (CC0-1.0).
 
 ## Licenças
 

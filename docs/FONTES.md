@@ -2,7 +2,7 @@
 
 Estado da licença: **por confirmar** significa que ainda não li os termos de reutilização. Nada daqui é republicado até estar confirmado.
 
-As linhas do openAR, do HowTheyVote e do Hugging Face foram verificadas a 2026-10-19.
+As linhas do openAR, do HowTheyVote e do Hugging Face foram verificadas a 2026-10-19. O índice de todas as ligações está em [CATALOGO.md](CATALOGO.md).
 
 ## Parlamento português (AR)
 
@@ -17,7 +17,7 @@ As linhas do openAR, do HowTheyVote e do Hugging Face foram verificadas a 2026-1
 
 | Fonte | O que dá | Formato | Licença | Notas |
 |---|---|---|---|---|
-| HowTheyVote.eu (HowTheyVote/data) | Votações nominais, eurodeputados, grupos | CSV (gzip) | por confirmar | O repositório não tem ficheiro de licença. O README remete para https://howtheyvote.eu/about, que fala de licença aberta com atribuição obrigatória mas não a nomeia. Só votações nominais, desde a 9.ª legislatura. Dados nos releases (ficheiros csv.gz), não no código. https://github.com/HowTheyVote/data |
+| HowTheyVote.eu (HowTheyVote/data) | Votações nominais, eurodeputados, grupos | CSV (gzip) | ODbL (base de dados) e DbCL (conteúdos), segundo https://howtheyvote.eu/data | O repositório não tem ficheiro de licença, a licença está no site. Fotografias de eurodeputados e resumos das votações não estão cobertos pela DbCL. A ODbL exige atribuição e partilha nos mesmos termos para bases derivadas publicadas. Só votações nominais, desde a 9.ª legislatura. Dados nos releases (ficheiros csv.gz), não no código. https://github.com/HowTheyVote/data |
 | Portal de dados abertos do PE | Resultados de votações e outros | vários | por confirmar | Fonte oficial |
 | Registo de votos do Conselho da UE | Votos dos Estados-Membros | vários | por confirmar | Fonte oficial |
 
@@ -44,6 +44,6 @@ As linhas do openAR, do HowTheyVote e do Hugging Face foram verificadas a 2026-1
 
 | Fonte | Licença | Notas |
 |---|---|---|
-| rgllm/awesome-portugal-data | GPL-3.0 | Só ligar. Copiar conteúdo obrigaria o nosso a GPL. https://github.com/rgllm/awesome-portugal-data |
+| rgllm/awesome-portugal-data | GPL-3.0 | Ligado como submódulo em `fontes/awesome-portugal-data`. Não se copia texto dela: o `etl/catalogo.py` extrai só nome, URL e categoria. https://github.com/rgllm/awesome-portugal-data |
 | devpt-org/public-data-portugal | por confirmar | Lista com portais como o Base |
 | dados.gov.pt | varia por dataset | Catálogo central de dados abertos |
