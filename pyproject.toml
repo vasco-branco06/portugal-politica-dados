@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "portugal-politica-dados"
+version = "0.1.0"
+description = "Dados abertos sobre parlamento (PT e UE), legislação e economia portuguesa"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "requests>=2.31",
+  "pandas>=2.0",
+  "pyarrow>=14",
+]
+
+[project.optional-dependencies]
+ine = ["pyptine"]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["etl*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
