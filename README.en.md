@@ -16,6 +16,18 @@ Versão em português: [README.md](README.md)
 
 The project links to existing work (openAR, HowTheyVote, BPstat, INE and others) instead of copying it. See [docs/FONTES.md](docs/FONTES.md).
 
+## Cloning with submodules
+
+```
+git clone --recurse-submodules https://github.com/vasco-branco06/portugal-politica-dados.git
+```
+
+If you already cloned without submodules:
+
+```
+git submodule update --init --recursive
+```
+
 ## Quick start
 
 ```
@@ -24,6 +36,10 @@ pip install -e ".[dev]"
 python -m etl.cli --help
 pytest
 ```
+
+## See also
+
+- [awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data): list of open data repositories in Portugal (GPL-3.0, link only).
 
 ## Licenses
 

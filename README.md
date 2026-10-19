@@ -29,6 +29,18 @@ portugal-politica-dados/
   tests/         testes
 ```
 
+## Clonar com submódulos
+
+```
+git clone --recurse-submodules https://github.com/vasco-branco06/portugal-politica-dados.git
+```
+
+Para quem já clonou sem submódulos:
+
+```
+git submodule update --init --recursive
+```
+
 ## Como começar
 
 Requer Python 3.10 ou superior.
@@ -42,6 +54,10 @@ python -m etl.cli --help
 python -m etl.cli pe-votacoes
 pytest
 ```
+
+## Ver também
+
+- [awesome-portugal-data](https://github.com/rgllm/awesome-portugal-data): lista de repositórios de dados abertos de Portugal (GPL-3.0, só ligação).
 
 ## Licenças
 
