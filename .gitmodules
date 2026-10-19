@@ -4,3 +4,9 @@
 [submodule "fontes/openar-mcp"]
 	path = fontes/openar-mcp
 	url = https://github.com/openar-pt/mcp
+[submodule "fontes/awesome-portugal-data"]
+	path = fontes/awesome-portugal-data
+	url = https://github.com/rgllm/awesome-portugal-data
+[submodule "fontes/howtheyvote-data"]
+	path = fontes/howtheyvote-data
+	url = https://github.com/HowTheyVote/data
