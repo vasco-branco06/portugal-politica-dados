@@ -2,7 +2,8 @@
 
 Fonte: https://github.com/HowTheyVote/data (CSV gzip, atualizado semanalmente,
 só votações nominais, desde a 9.ª legislatura).
-Confirmar a licença no site do HowTheyVote antes de republicar.
+Licença por confirmar (o repositório não tem ficheiro de licença, ver docs/FONTES.md).
+Não republicar os dados antes de a confirmar.
 """
 
 from __future__ import annotations
@@ -13,8 +14,14 @@ from .utils import USER_AGENT, download, raw_dir
 
 BASE = "https://github.com/HowTheyVote/data/releases/latest/download"
 
-# votes.csv.gz está confirmado na documentação do projeto.
-# Os restantes nomes são prováveis e têm de ser confirmados na página do export.
+# Ficheiros confirmados na release de 2026-10-17 (https://github.com/HowTheyVote/data/releases).
+# Colunas confirmadas nos cabeçalhos:
+#   votes: id, timestamp, display_title, reference, description, procedure_reference, ...
+#   member_votes: vote_id, member_id, position, country_code, group_code, group_short_label,
+#                 national_party_id, national_party_short_label
+#   members: id, first_name, last_name, country_code, date_of_birth, ...
+#   groups: code, official_label, label, short_label
+#   group_memberships: member_id, group_code, term, start_date, end_date
 FICHEIROS = [
     "votes.csv.gz",
     "member_votes.csv.gz",
@@ -40,8 +47,11 @@ def descarregar() -> list[str]:
 
 
 def filtrar_portugueses(member_votes, members):
-    """TODO: filtrar eurodeputados com país Portugal e juntar ao grupo político.
+    """Votos dos eurodeputados portugueses (country_code == "PRT"), com nome.
 
-    Depende dos nomes das colunas no export. Confirmar com os ficheiros descarregados.
+    member_votes já traz o grupo político (group_code, group_short_label) e o partido
+    nacional no momento do voto. De members só juntamos o nome.
     """
-    raise NotImplementedError("Confirmar colunas do export do HowTheyVote primeiro.")
+    pt = member_votes[member_votes["country_code"] == "PRT"]
+    nomes = members[["id", "first_name", "last_name"]].rename(columns={"id": "member_id"})
+    return pt.merge(nomes, on="member_id", how="left")
