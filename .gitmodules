@@ -1,0 +1,6 @@
+[submodule "fontes/openar-api"]
+	path = fontes/openar-api
+	url = https://github.com/openar-pt/api
+[submodule "fontes/openar-mcp"]
+	path = fontes/openar-mcp
+	url = https://github.com/openar-pt/mcp
