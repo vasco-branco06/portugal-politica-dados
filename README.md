@@ -66,8 +66,6 @@ Repositórios ligados em `fontes/` (submódulos Git). Detalhe em [fontes/README.
 | [openar-pt/mcp](https://github.com/openar-pt/mcp) | MIT (declarada no README) | submódulo |
 | [HowTheyVote/data](https://github.com/HowTheyVote/data) | ODbL e DbCL (segundo o site) | submódulo e releases |
 
-Por confirmar: [PORTULAN/parlamento-pt](https://huggingface.co/datasets/PORTULAN/parlamento-pt) (Hugging Face, metadados dizem só "other"). Também referido: [teex-pt/leis-pt-consolidada](https://huggingface.co/datasets/teex-pt/leis-pt-consolidada) (CC0-1.0).
-
 ## Licenças
 
 - Código: MIT (ver `LICENSE`).

@@ -48,8 +48,6 @@ Repositories linked under `fontes/` (Git submodules). Details in [fontes/README.
 | [openar-pt/mcp](https://github.com/openar-pt/mcp) | MIT (stated in the README) | submodule |
 | [HowTheyVote/data](https://github.com/HowTheyVote/data) | ODbL and DbCL (per the website) | submodule and releases |
 
-To be confirmed: [PORTULAN/parlamento-pt](https://huggingface.co/datasets/PORTULAN/parlamento-pt) (Hugging Face, metadata only says "other"). Also referenced: [teex-pt/leis-pt-consolidada](https://huggingface.co/datasets/teex-pt/leis-pt-consolidada) (CC0-1.0).
-
 ## Licenses
 
 Code: MIT. Data: each source keeps its own license, see [DATA_LICENSE.md](DATA_LICENSE.md).
